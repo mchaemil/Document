@@ -178,7 +178,7 @@ removeAll() {
 	// 그리고 비동기로 돔
 	this.firestore.collection('todos').get().then(todos => {
 		todos.forEach(todo => {
-			todo.ref.delete()
+		 todo.ref.delete()
 		})
 	})
 },
